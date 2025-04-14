@@ -74,7 +74,7 @@ scene("main", () => {
     const STREAK_TIMEOUT = 1.5;
     
     const bm = play("bgM", {
-        volume: 0.5,
+        volume: 0.7,
         loop: true
     });
     
@@ -228,7 +228,9 @@ scene("main", () => {
             if (tile) {
                 tile.hit = true;
                 destroy(tile);
-                play("hit");
+                const ht = play("hit",{
+                    volume: 0.7
+                })
                 
                 scoreLabel.value++;
                 scoreLabel.text = "Score: " + scoreLabel.value;
