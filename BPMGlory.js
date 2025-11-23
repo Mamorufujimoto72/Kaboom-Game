@@ -30,7 +30,7 @@ loadSound("hit", "HitSound.wav");
 scene("start", () => {
     // Title
     add([
-        text("Rhythm Game", { 
+        text("BPM GLORY", { 
             size: 64 * scaleFactor(),
         }),
         pos(width() / 2, height() / 2 - 100 * scaleFactor()),
